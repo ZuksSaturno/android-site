@@ -68,17 +68,37 @@ nav{
     
 
 }
-nav > a{
-    color: rgb(188, 241, 178);
+span > a{
+    color: rgb(180, 241, 178);
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
+    background-color: #03221100;
 }
-nav > a:hover{
+ul{
+    background-color: var(--cor2);
+    list-style-type:none;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    margin-left: 10px;
+    display:none;
+}
+li{
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+span>a:hover  {
     background-color: #2fa865b2;
     transition-duration: .3s;
-    border-radius: 5px;
+    border-radius: 5px;  
 }
+span.homi:hover ~ .listinha{
+    display: block;
+}
+
+
 main{
     
     min-width: 280px;
